@@ -2,6 +2,7 @@
 Start-Process "http://powershell.office.com/"
 
 # download dependencies
+# Skype and Sharepoint don't install to the module path!
 Start-Process "https://technet.microsoft.com/en-us/library/dn568015.aspx"
 
 # Azure AD module preview with ADAL
