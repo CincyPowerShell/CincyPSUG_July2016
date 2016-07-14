@@ -23,6 +23,9 @@ Start-Process "https://github.com/bwya77/O365-Admin-Center/"
 # O365 Service Health module
 Start-Process "https://github.com/mattmcnabb/O365ServiceCommunications"
 
+# Sharepoint client components
+Start-Process "https://www.microsoft.com/en-us/download/details.aspx?id=35585"
+
 # Office 365 APIs
 Start-Process "https://msdn.microsoft.com/en-us/office/office365/howto/rest-api-overview"
 
