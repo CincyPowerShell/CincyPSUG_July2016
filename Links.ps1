@@ -11,6 +11,9 @@ Start-Process "https://technet.microsoft.com/en-us/library/dn568015.aspx"
 # Azure AD module preview with ADAL
 Start-Process "https://connect.microsoft.com/site1164/content/content.aspx?ContentID=32016"
 
+# new Azure AD module preview
+Start-Process "https://azure.microsoft.com/en-us/updates/azure-ad-new-powershell-cmdlets-preview/" 
+
 # my blog
 Start-Process "http://mattmcnabb.github.io"
 
