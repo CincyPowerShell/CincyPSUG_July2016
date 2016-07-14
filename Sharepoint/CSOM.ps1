@@ -1,3 +1,4 @@
+#requires -module Microsoft.Online.Sharepoint.PowerShell
 function Invoke-SPORestMethod
 {
     <#
@@ -180,7 +181,7 @@ function Get-OnedriveSubsite
 
     PROCESS
     {
-        $Url = Get-OAMySiteUrl -TenantName $TenantName -LoginName $LoginName
+        $Url = Get-OnedriveUrl -TenantName $TenantName -LoginName $LoginName
         try
         {
             Invoke-SPORestMethod -Url $Url -Api '_api/web/webinfos' -Credential $Credential -ErrorAction Stop
@@ -210,3 +211,6 @@ function Get-OnedriveUrl
     $RootUrl = "https://$TenantName-my.sharepoint.com/personal"
     "$RootUrl/$RelativeUrl"
 }
+
+# check for subsites of Onedrive site collections
+Get-MsolUser | % {Get-OnedriveSubsite -LoginName  $_.userprincipalname -TenantName cincypowershell -Credential $O365Cred}
