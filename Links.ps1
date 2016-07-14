@@ -1,6 +1,9 @@
 # official PowerShell for Office 365 site
 Start-Process "http://powershell.office.com/"
 
+# Office 365 for IT Pros
+Start-Process "https://www.amazon.com/Office-365-Pros-Tony-Redmond-ebook/dp/B01G2LLVAI/ref=sr_1_1?ie=UTF8&qid=1468417433&sr=8-1&keywords=office+365+for+it+pros"
+
 # download dependencies
 # Skype and Sharepoint don't install to the module path!
 Start-Process "https://technet.microsoft.com/en-us/library/dn568015.aspx"
@@ -10,6 +13,9 @@ Start-Process "https://connect.microsoft.com/site1164/content/content.aspx?Conte
 
 # my blog
 Start-Process "http://mattmcnabb.github.io"
+
+# my blog
+Start-Process "https://github.com/mattmcnabb"
 
 # O365 Admin Center (not mine)
 Start-Process "https://github.com/bwya77/O365-Admin-Center/"

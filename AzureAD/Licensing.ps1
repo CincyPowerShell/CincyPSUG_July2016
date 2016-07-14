@@ -19,11 +19,11 @@ $Frodo | Set-MsolUserLicense -AddLicenses cincypowershell:ENTERPRISEPACK
 
 # modify the services available in the license
 $DisabledPlans = @(
-    "PROJECTWORKMANAGEMENT",
-    "SWAY",
-    "INTUNE_O365",
-    "YAMMER_ENTERPRISE",
-    "RMS_S_ENTERPRISE"
+    'PROJECTWORKMANAGEMENT',
+    'SWAY',
+    'INTUNE_O365',
+    'YAMMER_ENTERPRISE',
+    'RMS_S_ENTERPRISE'
 )
 $Options = New-MsolLicenseOptions -AccountSkuId cincypowershell:ENTERPRISEPACK -DisabledPlans $DisabledPlans
 $Frodo | Set-MsolUserLicense -LicenseOptions $Options
